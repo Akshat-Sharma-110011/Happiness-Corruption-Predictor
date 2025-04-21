@@ -27,6 +27,7 @@ class DataValidation:
             logging.info("Validating number of columns....")
             status = len(df.columns) == len(self._schema_config['columns'])
             logging.info(f"Is the Number of columns Present?: {status}")
+            return status
         except Exception as e:
             raise MyException(e, sys)
 

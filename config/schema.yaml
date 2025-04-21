@@ -1,4 +1,5 @@
 columns:
+  - _id: int
   - Country: str
   - happiness_score: float
   - gdp_per_capita: float
@@ -30,5 +31,7 @@ categorical_columns:
   - Country
   - continent
 
-num_features:
+drop_columns: _id
+
+ss_feature:
   - Year
