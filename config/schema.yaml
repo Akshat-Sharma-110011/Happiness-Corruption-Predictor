@@ -1,0 +1,34 @@
+columns:
+  - Country: str
+  - happiness_score: float
+  - gdp_per_capita: float
+  - family: float
+  - health: float
+  - freedom: float
+  - generosity: float
+  - government_trust: float
+  - dystopia_residual: float
+  - continent: str
+  - Year: int
+  - social_support: float
+  - cpi_score: int
+
+numerical_columns:
+  - happiness_score
+  - gdp_per_capita
+  - family
+  - health
+  - freedom
+  - generosity
+  - government_trust
+  - dystopia_residual
+  - Year
+  - social_support
+  - cpi_score
+
+categorical_columns:
+  - Country
+  - continent
+
+num_features:
+  - Year
