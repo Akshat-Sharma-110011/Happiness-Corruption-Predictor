@@ -1,0 +1,11 @@
+[project]
+name = "src"
+version = "0.0.1"
+description = "An MLOps project to learn the pipeline flow and make an streamlit app to get the happiness index score"
+authors = [{name = "Akshat Sharma", email = "akshatsharma.work.1310@gmail.com"}]
+
+[tool.setuptools]
+packages = {find = {}}
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
