@@ -55,4 +55,4 @@ class ModelEvaluationConfig:
 @dataclass
 class ModelPusherConfig:
     bucket_name: str = MODEL_BUCKET_NAME
-    s3_bucket_key: str = MODEL_PUSHER_S3_KEY
+    s3_bucket_key: str = MODEL_FILE_NAME
