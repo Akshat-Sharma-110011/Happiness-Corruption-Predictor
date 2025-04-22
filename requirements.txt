@@ -16,5 +16,6 @@ botocore
 streamlit
 python-multipart
 uvicorn
+xgboost
 jinja2
 -e .
