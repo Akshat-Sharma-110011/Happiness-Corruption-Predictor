@@ -17,7 +17,7 @@ class MongoDBClient:
             if MongoDBClient.client is None:
                 mongo_db_url = os.getenv(MONGODB_URL_KEY)
                 if mongo_db_url is None:
-                    raise MyException(f"Environment variable {MONGODB_URL_KEY} not set")
+                    raise MyException(f"Environment variable {MONGODB_URL_KEY} not set", sys)
 
             MongoDBClient.client = pymongo.MongoClient(mongo_db_url, tlsCAFile=ca)
 

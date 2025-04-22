@@ -45,3 +45,14 @@ class ModelTrainerConfig:
     _learning_rate: float = MODEL_LEARNING_RATE
     _subsample: float = MODEL_SUBSAMPLE
     _colsample_bytree: float = MODEL_COLSAMPLE_BYTREE
+
+@dataclass
+class ModelEvaluationConfig:
+    changed_evaluation_threshold: float = MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE
+    bucket_name: str = MODEL_BUCKET_NAME
+    s3_bucket_key: str = MODEL_PUSHER_S3_KEY
+
+@dataclass
+class ModelPusherConfig:
+    bucket_name: str = MODEL_BUCKET_NAME
+    s3_bucket_key: str = MODEL_PUSHER_S3_KEY
